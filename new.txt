@@ -1,1 +1,1 @@
-test that stash is not adding untracked file
+testing rm command
