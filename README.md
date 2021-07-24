@@ -232,3 +232,30 @@
         git reset --soft "will reset commit_history"
         git reset --mixed "will reset commit_history and staged_snapshots" (changes removes from 'add')
         git reset --hard "will reset all the three tree(commit_history, staged_snapshots and working_dir)
+
+--------------------------------------------------------------------------------
+* - delete branch
+    description:
+        It is common for a Git repo to have different branches. They are a
+        great way to work on different features and fixes while isolating
+        the new code from the main codebase.
+
+        Repos often have a master branch for the main codebase and developers
+        create other branches to work on different features.
+
+        Once work is completed on a feature, it is often recommended to delete
+        the branch.
+    example:
+        The -d option will delete the branch only if it has already been pushed and merged with the remote branch. Use -D instead if you want to force the branch to be deleted, even if it hasn't been pushed or merged yet.
+        syntax:
+            git branch -d localBranchName (delete branch locally)
+        example:
+            git branch -d sunil
+        
+        syntax:
+            git push origin --delete remoteBranchName (delete branch remotely)
+            git push origin :remoteBranchName (short command)
+        example:
+            git push origin --delete sunil
+            git push origin :sunil
+--------------------------------------------------------------------------------
