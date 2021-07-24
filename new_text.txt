@@ -1,4 +1,0 @@
-this is test file to learn git.
-
-some changes to test stash command...
-
