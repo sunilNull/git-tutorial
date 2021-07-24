@@ -1,0 +1,1 @@
+test that stash is not adding untracked file
