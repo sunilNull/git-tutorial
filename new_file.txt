@@ -1,3 +1,6 @@
 second new file created. to test commit rebaseing.
 
 added some code from repo to add step for pull.
+
+
+added some other stuffs to check fetch command.
